@@ -1,0 +1,79 @@
+<!-- 
+<div style="background-image: linear-gradient(315deg, #473bb7 0%, #0bab64 74%);width: 100%;height: 100%;">
+    
+</div> -->
+
+<div class="col-md-12" id="main" style="padding: 5rem;">
+    <div class="container overflow-hidden justify-content-center">
+        <div class="row gx-5">
+            <div class="card text-center bg-dark " id="stickybar" style="width: 18rem;padding-top: 1rem;">
+                <img src="{{userDetail.ProfilePicturePath}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{userDetail.FirstName}} {{userDetail.LastName}}</h5>
+                    <span>{{userDetail.CurrentJobTitle}}</span>
+                    <hr>
+                    <p class="card-text">{{userDetail.HeightestEducationQualification}}</p>
+                    <hr>
+                    <table style="text-align: center;width: 100%;">
+                        <tbody>
+                            <tr id="heDa">
+                                <td>Experince</td>
+                                <td>Expectations
+
+                                </td>
+                            </tr>
+                            <tr id="coDa">
+                                <td>{{userDetail.TotalExperience}}</td>
+                                <td>{{userDetail.Expectations}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table style="text-align: left;width: 100%;">
+                        <tbody>
+                            <tr id="heDa">
+                                <td> <i class="fas fa-envelope"></i> </td>
+                                <td>{{userDetail.EmailAddress}}</td>
+                            </tr>
+                            <tr id="heDa">
+                                <td><i class="fas fa-phone-alt"></i></td>
+                                <td>{{userDetail.MobileNumber}}</td>
+                            </tr>
+                            <tr id="heDa">
+                                <td><i class="fas fa-map-marker-alt"></i></td>
+                                <td>{{userDetail.ResidentialAddress}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-left bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title" style="border-bottom: 1px solid aliceblue;padding-bottom: 10px;">Profile</h5>
+
+                        <p class="card-text">{{userDetail.AboutUser}}</p>
+                        <dl class="row">
+                            <dt class="col-sm-3">
+                                        <div class="d-flex flex-sm-row-reverse text-right">Weight</div>
+                                    </dt>
+                            <dd class="col-sm-9">
+                                {{userDetail.Weight}}
+                            </dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-sm-3">
+                                        <div class="d-flex flex-sm-row-reverse text-right">Height</div>
+                                    </dt>
+                            <dd class="col-sm-9">
+                                {{userDetail.Height}}
+                            </dd>
+                        </dl>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
