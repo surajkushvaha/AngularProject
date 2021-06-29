@@ -1,0 +1,77 @@
+<!-- 
+<div style="background-image: linear-gradient(315deg, #473bb7 0%, #0bab64 74%);width: 100%;height: 100%;">
+    
+</div> -->
+
+<div class="col-md-12" id="main" style="padding: 5rem;">
+    <div class="container overflow-hidden justify-content-center">
+        <div class="row gx-5">
+            <div class="card text-center bg-dark " id="stickybar" style="width: 18rem;padding-top: 1rem;">
+                <img src="{{facultyDetail.FacultyImage}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{facultyDetail.FacultyName}}</h5>
+                    <span>{{facultyDetail.FacultyDesignation}}</span>
+                    <hr>
+                    <p class="card-text">{{facultyDetail.FacultyHighestEducation}}</p>
+                    <hr>
+                    <table style="text-align: center;width: 100%;">
+                        <tbody>
+                            <tr id="heDa">
+                                <td>Experince</td>
+                                <td>Working since</td>
+                            </tr>
+                            <tr id="coDa">
+                                <td>{{facultyDetail.FacultyExperienceInYears}}</td>
+                                <td>{{facultyDetail.FacultyWorkingSince}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table style="text-align: left;width: 100%;">
+                        <tbody>
+                            <tr id="heDa">
+                                <td> <i class="fas fa-envelope"></i> </td>
+                                <td>{{facultyDetail.FacultyEmailAddress}}</td>
+                            </tr>
+                            <tr id="heDa">
+                                <td><i class="fas fa-phone-alt"></i></td>
+                                <td>{{facultyDetail.FacultyMobileNumber}}</td>
+                            </tr>
+                            <tr id="heDa">
+                                <td><i class="fas fa-map-marker-alt"></i></td>
+                                <td>{{facultyDetail.FacultySeating}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-left bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title" style="border-bottom: 1px solid aliceblue;padding-bottom: 10px;">Profile</h5>
+
+                        <p class="card-text">{{facultyDetail.FacultyProfileDescription}}</p>
+                        <dl class="row">
+                            <dt class="col-sm-3">
+                                        <div class="d-flex flex-sm-row-reverse text-right">Area of Specialization</div>
+                                    </dt>
+                            <dd class="col-sm-9">
+                                {{facultyDetail.FacultyAreaSpecialization}}
+                            </dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-sm-3">
+                                        <div class="d-flex flex-sm-row-reverse text-right">Subjects Taught</div>
+                                    </dt>
+                            <dd class="col-sm-9">
+                                {{facultyDetail.FacultySubjectsTaught}}
+                            </dd>
+                        </dl>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

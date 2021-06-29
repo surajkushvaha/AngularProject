@@ -1,0 +1,33 @@
+<div class="col-9 px-1 " id="main" style="background:transparent">
+    <div class="container overflow-hidden" style="height: 100%;    padding-bottom: 4rem;
+">
+        <div class="row gy-5" style="margin-top: 3rem;">
+            <div class="col-4" *ngFor="let f of faculty">
+                <div class="card text-center" id="cardeffect" style="width: 18rem;" (click)="detailFaculty(f.FacultyID)">
+                    <img src="{{f.FacultyImage}}" class="card-img-top" alt="..." style="height: 18rem; border-radius: 10px;border-bottom-left-radius: 0;border-bottom-right-radius: 0;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{f.FacultyName}}</h5>
+                        <span>{{f.FacultyDesignation}}</span>
+                        <hr>
+                        <p class="card-text">{{f.FacultyHighestEducation}}</p>
+                        <hr>
+                        <table style="text-align: center;width: 100%;">
+                            <tbody>
+                                <tr id="heDa">
+                                    <td>Experince</td>
+                                    <td>Working since</td>
+                                </tr>
+                                <tr id="coDa">
+                                    <td>{{f.FacultyExperienceInYears}}</td>
+                                    <td>{{f.FacultyWorkingSince}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <a (click)="detailFaculty(f.FacultyID)">View full profile<i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

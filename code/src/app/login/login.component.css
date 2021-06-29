@@ -1,0 +1,17 @@
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    padding: 1rem;
+    background-color: rgba(26, 25, 25, 0.089);
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.349);
+}
+
+.form-group {
+    padding: 10px 0px 10px 0px;
+}
